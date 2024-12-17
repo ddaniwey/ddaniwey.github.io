@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva página</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>POPCORNBOX</title>
+
 </head>
+<header>
+    <div id="barraDeNavegacion">
+    <h2 id="titulo">POPCORNBOX</h2>
+    <div id="buscadores">
+        <div id="caja">
+            <label for="titulo">Título</label>
+            <input type="texto" id="titulo">
+            <input type="submit" id="buscarTitulo">
+        </div>
+        <div id="caja">
+            <label for="actor">Actor</label>
+            <input type="text" id="actor">
+            <input type="submit" id="buscarActor">
+        </div>
+        <div id="caja">
+            <select name="Género" id="selectGenero">
+            <option id="genero terror">Terror</option>
+            <option id="genero comedia">Comedia</option>
+            <option id="genero aventuras">Aventuras</option>
+            <option id="genero musical">Musical</option>
+            <option id="genero suspense">Suspense</option>
+            </select>
+        </div>
+        <div id="caja">
+            <label for="anio">Año</label>
+            <input type="text" id="anio">
+        </div>
+        <div id="caja">
+            <select name="Duración" id="selectDuracion">
+            <option id="duracion ascendente">Ascendente</option>
+            <option id="duracion descendente">Descendente</option>
+            </select>
+        </div>
+    </div>
+    </div>
+</header>
 <body>
-    <h2>Nueva página de Daniel Ortiz</h2>
+    <main id="mainPeliculas"></main>
+    <div  class="card">
+        <p class="nombrePelicula">Nombre película</p>
+        <img class="imagenPelicula" src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/2FUHZ5YPTRM33NRP3YZBXYAMEI.jpg"
+        alt="pelicula">
+        <p class="genero"><strong>Genero: </strong></p>
+    </div>
+    </main>
+
 </body>
+
+</html>
+<script src="myhttp.js"></script>
+<script src="app.js"></script>
+<script src="gestor-eventos.js"></script>

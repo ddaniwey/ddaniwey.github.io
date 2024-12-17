@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo {
+    margin: auto;
+    text-align: center;
+}
+
+html {
+    background-color: #FFEA18;
+}
+
+header {
+    background-color: #FFD218;
+    position: sticky;
+    width: 100%;
+}
+#caja {
+    margin: 10px;
+    display: inline-block;
+}
+
+#buscadores {
+    text-align: center;
+}
+
+.imagenPelicula {
+    width: 260px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card {
+    width: 336px; /* Ajusta el ancho de la carta */
+    min-height: 300px;
+        display: inline-block;
+        background-color: rgb(234, 226, 117);
+        border: 1px none;
+        padding: 30px;
+        margin: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #000000;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 6px 3px 3px rgb(41, 41, 41), 4px 4px 4px  rgb(41, 41, 41) ;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #ffd500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgb(246, 255, 0);
+}
+
+.nombrePelicula {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffd500;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgb(246, 255, 0);
+}
+#mainPeliculas {
+    padding: 15px;
+  text-align: center;
+}
+
+.card .genero {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: coral;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card span {
+    font-size: 0.75rem;
+    text-shadow: none;
+    text-align: left;
+    
+}
