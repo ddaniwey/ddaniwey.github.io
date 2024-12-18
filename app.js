@@ -1,4 +1,5 @@
 const URL = 'https://ddaniwey.github.io/movies-250.json';
+let peliculas;
 
 function generarFicha(pelicula){
     // 1. Crear carta de película
@@ -17,6 +18,7 @@ function generarFicha(pelicula){
     nuevaImg.setAttribute('class', 'imagenPelicula');
     nuevaImg.setAttribute('src', pelicula.Poster);
     nuevaImg.setAttribute('alt', 'Poster de la película: ' + pelicula.Title);
+   
     nuevaCard.appendChild(nuevaImg);
 
     // si la imagen no está disponible
@@ -35,13 +37,19 @@ function generarFicha(pelicula){
 
     nuevaCard.appendChild(nuevoGenero);
 
+    // 5. Crear actor
+    const nuevoActor = document.createElement('p');
+    nuevoActor.setAttribute('class', 'actores');
+    nuevoActor.innerHTML = `Actores: ${pelicula.Actors}`;
+
+    nuevaCard.appendChild(nuevoActor);
+    // Unir todo al MAIN
     const main = document.querySelector('#mainPeliculas');
     main.appendChild(nuevaCard);
 }
 
 function processMovie(data){
-    console.log(data);
-    const peliculas = data.movies;
+    peliculas = data.movies;
 
     /*
 
@@ -68,5 +76,12 @@ function processMovie(data){
     generarFicha(pelicula);
    });
 }
+
+function clearCards(){
+  let cartas =  document.querySelectorAll(".card").forEach(carta=>carta.remove());//Elegante
+    console.log(cartas);
+}
+
+
 
 doGetRequest(URL, processMovie);

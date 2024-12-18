@@ -44,6 +44,7 @@ header {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         background-color: #000000;
         transition: transform 0.2s, box-shadow 0.2s;
+        overflow:visible;
         box-shadow: 6px 3px 3px rgb(41, 41, 41), 4px 4px 4px  rgb(41, 41, 41) ;
 }
 
@@ -82,11 +83,20 @@ header {
     color: coral;
     text-align: left;
     margin-left: 10px;
+    text-transform:none ;
+}
+
+.actores {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: coral;
+    text-align: left;
+    margin-left: 10px;
+    text-transform:none ;
 }
 
 .card span {
     font-size: 0.75rem;
     text-shadow: none;
     text-align: left;
-    
 }

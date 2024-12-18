@@ -9,17 +9,16 @@
 </head>
 <header>
     <div id="barraDeNavegacion">
-    <h2 id="titulo">POPCORNBOX</h2>
+    <h2 id="tituloPagina">POPCORNBOX</h2>
     <div id="buscadores">
         <div id="caja">
-            <label for="titulo">Título</label>
-            <input type="texto" id="titulo">
-            <input type="submit" id="buscarTitulo">
+
+            <input type="texto" id="inputTitulo" placeholder="Título">
+            <button id="botonTitulo">Buscar</button>
         </div>
         <div id="caja">
-            <label for="actor">Actor</label>
-            <input type="text" id="actor">
-            <input type="submit" id="buscarActor">
+            <input type="text" id="inputActor" placeholder="Actor">
+            <button id="botonActor">Buscar</button>
         </div>
         <div id="caja">
             <select name="Género" id="selectGenero">
@@ -40,8 +39,10 @@
             <option id="duracion descendente">Descendente</option>
             </select>
         </div>
+
     </div>
     </div>
+
 </header>
 <body>
     <main id="mainPeliculas"></main>
@@ -49,13 +50,14 @@
         <p class="nombrePelicula">Nombre película</p>
         <img class="imagenPelicula" src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/2FUHZ5YPTRM33NRP3YZBXYAMEI.jpg"
         alt="pelicula">
-        <p class="genero"><strong>Genero: </strong></p>
+        <p class="genero"><span>Genero: </span></p>
+        <p class="actores">Actores: </p>
     </div>
     </main>
-
+    <script src="myhttp.js"></script>
+    <script src="app.js"></script>
+    <script src="gestor-eventos.js"></script>
 </body>
 
 </html>
-<script src="myhttp.js"></script>
-<script src="app.js"></script>
-<script src="gestor-eventos.js"></script>
+
